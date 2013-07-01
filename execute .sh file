@@ -1,0 +1,25 @@
+To install .sh file, you need to use terminal.
+Execute .sh files
+
+    Open Terminal: Ctrl+Shift+T or Applications -> Accessories -> Terminal
+    Navigate to where you save your file. Make sure you save your file where you want to install the application.
+    Make your file executable.
+
+        chmod +x yourfile.sh
+
+    Execute the file
+
+        sudo ./yourfile.sh
+
+    Replace the name of the .sh file into “yourfile.” Make sure you type everything in correctly, including the file name, the period and lash before the file.
+    Enter your password and the file will be executed.
+
+
+An easier way for me is just to press the ctrl , alt, and T keys to open a terminal.
+
+Navigate to the folder that contains your script file.
+
+Then all you have to do is type ./yourscriptname.sh and the script will be run in the terminal, or to run the script with root priviledges, type: sudo ./yourscriptname.sh
+
+Before you can run the .sh or “bash’ script file though, you will need to make it executable buy Right clicking on it and then Selecting Properties, then click on Permissions, then Click Allow executing file as a program to set it’s executable bit before it will be executed (run) in the terminal.
+or from the terminal type: chmod u+x yourscriptname.sh
