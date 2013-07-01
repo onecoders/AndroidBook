@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_gravity="center" >
+        <ImageView
+	        android:id="@+id/hint_icon"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="5dip"
+	        android:layout_gravity="center" />
+
+	    <TextView 
+	        android:id="@+id/hint_text"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="fill_parent"
+	        android:paddingLeft="5dip"
+	        android:paddingRight="5dip"
+	        android:layout_gravity="center"
+	        android:text="@string/hintText"
+	        android:textColor="#fff"
+	        android:typeface="serif"
+	        android:textSize="16sp" />        
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btnHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnText"
+        android:layout_gravity="center"
+        android:typeface="serif" />
+                                             
+</LinearLayout>         
