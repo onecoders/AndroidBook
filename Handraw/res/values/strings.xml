@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Handraw</string>
+    <string name="color">PaintColor</string>
+    <string name="color_red">Red</string>
+    <string name="color_green">Green</string>
+    <string name="color_blue">Blue</string>
+    <string name="width">StrokeWidth</string>
+    <string name="width_1">1</string>
+    <string name="width_3">3</string>
+    <string name="width_5">5</string>
+    
+    <string name="blur">Blur</string>
+    <string name="emboss">Emboss</string>
+
+</resources>
