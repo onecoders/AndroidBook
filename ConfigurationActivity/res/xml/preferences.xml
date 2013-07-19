@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="AUTO SYNC" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkboxPref"
+            android:summary="Monitor folder and sync in background"
+            android:title="Enable Autosync" />
+
+        <ListPreference
+            android:entries="@array/internet_connection"
+            android:entryValues="@array/internet_connection"
+            android:key="internet_connection"
+            android:title="Internet Connection"
+            android:defaultValue="WiFi only"
+            android:enabled="false" />
+        <ListPreference
+            android:entries="@array/autosync_interval"
+            android:entryValues="@array/autosync_interval"
+            android:key="autosync_interval"
+            android:title="Autosync Interval"
+            android:defaultValue="15 minutes"
+            android:enabled="false" />
+        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Category 2" >
+        <EditTextPreference
+            android:name="EditText"
+            android:defaultValue="[Enter a string here]"
+            android:key="editTextPref"
+            android:summary="Enter a string"
+            android:title="Edit Text" />
+
+        <RingtonePreference
+            android:name="Ringtone Preference"
+            android:key="ringtonePref"
+            android:summary="Select a ringtone"
+            android:title="Ringtones" />
+
+        <PreferenceScreen
+            android:key="secondPrefScreenPref"
+            android:summary="Click here to go to the second Preference Screen"
+            android:title="Second Preference Screen" >
+            <EditTextPreference
+                android:name="EditText"
+                android:key="secondEditTextPref"
+                android:summary="Enter a string"
+                android:title="Edit Text (second Screen)" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

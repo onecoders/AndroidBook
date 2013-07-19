@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConfigurationActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="sync_config">Sync To</string>
+    <string name="cancel">Cancel</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="dropbox">Dropbox</string>
+    <string name="google_drive">Google Drive</string>
+    <string name="select_which_to_sync">Select Sync To:</string>
+    <string name="other">Other</string>
+    <string name="setting">setting</string>
+
+    <string-array name="internet_connection">
+        <item>WiFi only</item>
+        <item>Both WiFi and Mobile</item>
+    </string-array>
+    <string-array name="autosync_interval">
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>4 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+    </string-array>
+
+</resources>

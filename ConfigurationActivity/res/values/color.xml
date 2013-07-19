@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="cancel">#ffff0000</color>
+    <color name="sync_now">#ff00ff11</color>
+    
+</resources>
