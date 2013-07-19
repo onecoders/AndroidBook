@@ -9,8 +9,8 @@ package com.example.configurationactivity;
 
 public final class R {
     public static final class array {
-        public static final int autosync_interval=0x7f080001;
-        public static final int internet_connection=0x7f080000;
+        public static final int autosync_interval=0x7f070001;
+        public static final int internet_connection=0x7f070000;
     }
     public static final class attr {
     }
@@ -53,16 +53,16 @@ public final class R {
         public static final int sync_configuration=0x7f0a0000;
     }
     public static final class string {
-        public static final int action_settings=0x7f070001;
-        public static final int app_name=0x7f070000;
-        public static final int cancel=0x7f070003;
-        public static final int dropbox=0x7f070005;
-        public static final int google_drive=0x7f070006;
-        public static final int other=0x7f070008;
-        public static final int select_which_to_sync=0x7f070007;
-        public static final int setting=0x7f070009;
-        public static final int sync_config=0x7f070002;
-        public static final int sync_now=0x7f070004;
+        public static final int action_settings=0x7f080001;
+        public static final int app_name=0x7f080000;
+        public static final int cancel=0x7f080003;
+        public static final int dropbox=0x7f080005;
+        public static final int google_drive=0x7f080006;
+        public static final int other=0x7f080008;
+        public static final int select_which_to_sync=0x7f080007;
+        public static final int setting=0x7f080009;
+        public static final int sync_config=0x7f080002;
+        public static final int sync_now=0x7f080004;
     }
     public static final class style {
         /** 

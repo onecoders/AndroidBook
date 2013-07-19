@@ -5,28 +5,27 @@ import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 
 public class Preferences extends PreferenceActivity implements
 		OnPreferenceChangeListener {
-	
+
 	private ListPreference internet_connection;
 	private ListPreference autosync_interval;
+	private CheckBoxPreference checkboxPref;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		addPreferencesFromResource(R.xml.preferences);
-		
-		CheckBoxPreference checkboxPref = (CheckBoxPreference) findPreference("checkboxPref");
+
+		checkboxPref = (CheckBoxPreference) findPreference("checkboxPref");
 		checkboxPref.setOnPreferenceChangeListener(this);
-		
-		
+
 		internet_connection = (ListPreference) findPreference("internet_connection");
 		internet_connection.setSummary(internet_connection.getEntry());
 		internet_connection.setOnPreferenceChangeListener(this);
-		
+
 		autosync_interval = (ListPreference) findPreference("autosync_interval");
 		autosync_interval.setSummary(autosync_interval.getEntry());
 		autosync_interval.setOnPreferenceChangeListener(this);
