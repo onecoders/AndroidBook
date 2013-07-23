@@ -100,23 +100,9 @@ public class NotificationTest extends Activity implements OnClickListener {
 	
 	private Builder setClickableButton(Builder builder, boolean isPositive){
 		if (isPositive) {
-			return builder.setPositiveButton("OK",
-					new DialogInterface.OnClickListener() {
-
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							show.setText("you click the OK button");
-						}
-					});
+			return setPositiveButton(builder);
 		} else {
-			return builder.setNegativeButton("Cancel",
-					new DialogInterface.OnClickListener() {
-
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							show.setText("you click the Cancel button");
-						}
-					});
+			return setNegativeButton(builder);
 		}
 	}
 }
