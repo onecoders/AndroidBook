@@ -51,10 +51,10 @@ public class NotificationTest extends Activity implements OnClickListener {
 			PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
 			Notification notify = new Notification.Builder(this)
 					.setAutoCancel(true)
-					.setTicker("有新消息")
+					.setTicker("New Message")
 					.setSmallIcon(R.drawable.ic_launcher)
-					.setContentTitle("一条通知")
-					.setContentText("恭喜你，您加薪了，工资增加20%")
+					.setContentTitle("One Notification!")
+					.setContentText("Congratulations to you !")
 					.setDefaults(
 							Notification.DEFAULT_SOUND
 									| Notification.DEFAULT_LIGHTS)
@@ -72,10 +72,22 @@ public class NotificationTest extends Activity implements OnClickListener {
 		AlertDialog.Builder builder = new AlertDialog.Builder(this)
 				.setTitle("Simple Dialog").setIcon(R.drawable.ic_launcher)
 				.setMessage("Dialog Content\nSecond");
-		setNegativeButton(setPositiveButton(builder)).create().show();
+		//setNegativeButton(setPositiveButton(builder)).create().show();
+		setClickableButton(setClickableButton(builder, true), false).create().show();
 	}
 
 	private Builder setNegativeButton(Builder builder) {
+		return builder.setNegativeButton("Cancel",
+				new DialogInterface.OnClickListener() {
+
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						show.setText("you click the Cancel button");
+					}
+				});
+	}
+
+	private Builder setPositiveButton(Builder builder) {
 		return builder.setPositiveButton("OK",
 				new DialogInterface.OnClickListener() {
 
@@ -85,15 +97,26 @@ public class NotificationTest extends Activity implements OnClickListener {
 					}
 				});
 	}
+	
+	private Builder setClickableButton(Builder builder, boolean isPositive){
+		if (isPositive) {
+			return builder.setPositiveButton("OK",
+					new DialogInterface.OnClickListener() {
 
-	private Builder setPositiveButton(Builder builder) {
-		return builder.setNegativeButton("Cancel",
-				new DialogInterface.OnClickListener() {
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							show.setText("you click the OK button");
+						}
+					});
+		} else {
+			return builder.setNegativeButton("Cancel",
+					new DialogInterface.OnClickListener() {
 
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						show.setText("you click the Cancel button");
-					}
-				});
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							show.setText("you click the Cancel button");
+						}
+					});
+		}
 	}
 }
