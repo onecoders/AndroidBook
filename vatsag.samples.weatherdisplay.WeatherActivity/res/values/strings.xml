@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">WeatherDisplay</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_weather">Weather Information</string>
+	<string name="strCity">Sydney</string>
+	<string name="strWeather">Sunny</string>
+	<string name="strTemp">32°C</string>
+	<string name="txtTemp">Temp</string>	
+	<string name="strWindSpeed">5kmph</string>
+	<string name="txtWindSpeed">WindSpeed</string>
+	<string name="Separator">---</string>
+</resources>
