@@ -7,5 +7,6 @@
     <string name="bind">Bind Service</string>
     <string name="unbind">Unbind Service</string>
     <string name="getServiceStatus">Get Service Status</string>
+    <string name="add">Add 100</string>
 
 </resources>

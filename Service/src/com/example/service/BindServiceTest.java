@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class BindServiceTest extends Activity {
 
-	private Button bind, unbind, getServiceStatus;
+	private Button bind, unbind, getServiceStatus, add;
 	private BindService.MyBinder binder;
 
 	private ServiceConnection conn = new ServiceConnection() {
@@ -39,6 +39,7 @@ public class BindServiceTest extends Activity {
 		bind = (Button) findViewById(R.id.bind);
 		unbind = (Button) findViewById(R.id.unbind);
 		getServiceStatus = (Button) findViewById(R.id.getStatus);
+		add = (Button) findViewById(R.id.add);
 
 		final Intent intent = new Intent();
 		intent.setAction("com.example.service.BindService");
@@ -68,6 +69,15 @@ public class BindServiceTest extends Activity {
 						Toast.LENGTH_SHORT).show();
 			}
 		});
+
+		add.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				binder.doInBackground();
+			}
+		});
+
 	}
 
 	@Override

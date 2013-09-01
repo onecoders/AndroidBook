@@ -16,6 +16,10 @@ public class BindService extends Service {
 		public int getCount() {
 			return count;
 		}
+
+		public void doInBackground() {
+			doInBackgroundInService();
+		}
 	}
 
 	@Override
@@ -49,6 +53,10 @@ public class BindService extends Service {
 	public void onDestroy() {
 		super.onDestroy();
 		this.quit = true;
+	}
+
+	private void doInBackgroundInService() {
+		this.count += 100;
 	}
 
 }

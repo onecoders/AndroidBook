@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/bind"
         android:text="@string/unbind" />
-
+    
     <Button
         android:id="@+id/getStatus"
         android:layout_width="match_parent"
@@ -28,4 +28,11 @@
         android:layout_below="@id/unbind"
         android:text="@string/getServiceStatus" />
 
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getStatus"
+        android:text="@string/add" />
+    
 </RelativeLayout>
