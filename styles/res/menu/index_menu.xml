@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- action_divider is not menu, it's only a vertical line -->
+    <item
+        android:actionLayout="@layout/action_divider"
+        android:showAsAction="always"
+        android:title="@string/action_divider"/>
+    <item
+        android:id="@+id/addPair"
+        android:icon="@drawable/add_sync_pair_icon"
+        android:showAsAction="always"
+        android:title="@string/add_sync_pair"/>
+    <item
+        android:actionLayout="@layout/action_divider"
+        android:showAsAction="always"
+        android:title="@string/action_divider"/>
+    <item
+        android:id="@+id/account_manager"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/account_manager"/>
+    <item
+        android:id="@+id/feedback"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/feedback"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/about"/>
+    <item
+        android:id="@+id/translate"
+        android:showAsAction="never"
+        android:title="@string/translate"/>
+</menu>

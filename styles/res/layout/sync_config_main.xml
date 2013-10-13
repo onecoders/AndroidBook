@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sync_pair_config_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_repeat" >
+
+    <View
+        android:id="@+id/left"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/landscope_two_bar"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:layout_weight="3"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/account"
+            style="@style/bottom_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_task_button_top"
+            android:clickable="true"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dip" >
+
+            <ImageView
+                android:id="@+id/account_left"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:duplicateParentState="true"
+                android:src="@drawable/user_group_new" />
+
+            <ImageView
+                android:id="@+id/account_right"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:duplicateParentState="true"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:id="@+id/account_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/account_right"
+                android:layout_toRightOf="@id/account_left"
+                android:duplicateParentState="true"
+                android:ellipsize="end"
+                android:hint="@string/account"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cloudFolder"
+            style="@style/bottom_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_task_button_middle"
+            android:clickable="true"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dip" >
+
+            <ImageView
+                android:id="@+id/cloudFolder_left"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:duplicateParentState="true"
+                android:src="@drawable/icon_launch" />
+
+            <ImageView
+                android:id="@+id/cloudFolder_right"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:duplicateParentState="true"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:id="@+id/cloudFolder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/cloudFolder_right"
+                android:layout_toRightOf="@id/cloudFolder_left"
+                android:duplicateParentState="true"
+                android:ellipsize="end"
+                android:hint="@string/remotePath"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/localFolder"
+            style="@style/bottom_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_task_button_bottom"
+            android:clickable="true"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingTop="10dip" >
+
+            <ImageView
+                android:id="@+id/localFolder_left"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:duplicateParentState="true"
+                android:src="@drawable/folder" />
+
+            <ImageView
+                android:id="@+id/localFolder_right"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:duplicateParentState="true"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:id="@+id/localFolder_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/localFolder_right"
+                android:layout_toRightOf="@id/localFolder_left"
+                android:duplicateParentState="true"
+                android:ellipsize="end"
+                android:hint="@string/localPath"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip"
+                android:singleLine="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/advance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/new_task_button"
+            android:clickable="true"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip" >
+
+            <ImageView
+                android:id="@+id/advance_left"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:duplicateParentState="true"
+                android:src="@drawable/advance" />
+
+            <ImageView
+                android:id="@+id/advance_right"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/desc"
+                android:duplicateParentState="true"
+                android:src="@drawable/right_arrow" />
+
+            <TextView
+                android:id="@+id/advance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/advance_right"
+                android:layout_toRightOf="@id/advance_left"
+                android:duplicateParentState="true"
+                android:ellipsize="end"
+                android:paddingBottom="10dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="10dip"
+                android:singleLine="true"
+                android:text="@string/advance"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/right"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/landscope_two_bar"
+        android:visibility="gone" />
+
+</FrameLayout>

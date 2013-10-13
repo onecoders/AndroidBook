@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <color name="pressed_synctheme">#CC33B5E5</color>
+    <color name="location">#CC33B5E5</color>
+    <color name="menu_item_divider_left">#0084b4</color>
+    <color name="menu_item_divider_right">#48c6f9</color>
+    <color name="white">#ffffff</color>
+    <color name="pressed_actionbar">#0893c6</color>
+    <color name="bottom_button">#dadada</color>
+    <color name="button_divider_left">#c0c0c0</color>
+    <color name="button_divider_top">#cccccc</color>
+    <color name="button_divider_bottom">#dce3e3</color>
+    <color name="location_divider">#c4c4c4</color>
+    <color name="listview_divider">#DADADA</color>
+    <color name="progress_bg">#DADADA</color>
+    <color name="listview_divider_bottom">#cfcecc</color>
+    <color name="listview_divider_left">#cfcecc</color>
+    <color name="listview_selected_color">#d9d9d9</color>
+    <color name="bottom_bar_top">#cfcecc</color>
+    <color name="sync_date_color">#524f4f</color>
+    <color name="selected_bg">#33b5e5</color>
+    <color name="landscope_two_bar">#0077a9</color>
+    <color name="ruleview_path_text">#0096d4</color>
+    <color name="black">#000000</color>
+    <color name="config_text">#446e7f</color>
+
+</resources>

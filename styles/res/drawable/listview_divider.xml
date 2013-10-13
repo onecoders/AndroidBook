@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:bottom="2dip">
+        <shape android:shape="line" >
+            <stroke
+                android:width="1dip"
+                android:color="@color/listview_divider_bottom" />
+
+            <size android:height="4dip" />
+        </shape>
+    </item>
+    <item android:top="2dip">
+        <shape android:shape="line" >
+            <stroke
+                android:width="1dip"
+                android:color="@color/white" />
+
+            <size android:height="4dip" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sync_index_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_repeat" >
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.nachuantech.opensync.view.SideView
+            android:id="@+id/left"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <ListView
+                android:id="@+id/syncPairItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:dividerHeight="0dip" />
+
+            <TextView
+                android:id="@+id/empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dip"
+                android:gravity="left|center_vertical"
+                android:text="@string/index_empty"
+                android:textColor="@color/abs__holo_blue_light"
+                android:textSize="@dimen/empty_text_size" />
+        </RelativeLayout>
+
+        <com.nachuantech.opensync.view.SideView
+            android:id="@+id/right"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/context_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/button_divider_top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_button"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/menu_delete"
+                style="@style/bottom_buttom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/menu_delete" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/button_divider_left" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <ImageButton
+                android:id="@+id/menu_config"
+                style="@style/bottom_buttom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/desc"
+                android:src="@drawable/menu_config" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/button_divider_bottom" />
+    </LinearLayout>
+
+</RelativeLayout>

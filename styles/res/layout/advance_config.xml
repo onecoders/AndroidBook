@@ -1,0 +1,372 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_repeat" >
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/button_divider_top" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottom_button"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/bottom_buttom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:textSize="@dimen/general"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/button_divider_left" />
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center_vertical"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/finish"
+                style="@style/bottom_buttom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/OK"
+                android:textSize="@dimen/general"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/button_divider_bottom" />
+    </LinearLayout>
+
+    <!-- header -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <com.nachuantech.opensync.view.SideView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ScrollView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                android:orientation="vertical" >
+
+                <!-- interval -->
+
+                <RelativeLayout
+                    android:id="@+id/interval"
+                    style="@style/bottom_buttom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/config_height"
+                    android:background="@drawable/new_task_button_top"
+                    android:clickable="true"
+                    android:translationY="2dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="@dimen/config_padding" >
+
+                        <TextView
+                            android:id="@+id/interval_left"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/config_inner_height"
+                            android:gravity="center_vertical"
+                            android:text="@string/intervalTitle"
+                            android:textSize="@dimen/general"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/interval_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/config_inner_height"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/config_text"
+                            android:textSize="@dimen/general" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/desc"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <!-- connection -->
+
+                <RelativeLayout
+                    android:id="@+id/connection"
+                    style="@style/bottom_buttom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/config_height"
+                    android:background="@drawable/new_task_button_middle"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="@dimen/config_padding" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/config_inner_height"
+                            android:gravity="center_vertical"
+                            android:text="@string/connection"
+                            android:textSize="@dimen/general"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/connection_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/config_inner_height"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/config_text"
+                            android:textSize="@dimen/general" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/desc"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <!-- method -->
+
+                <RelativeLayout
+                    android:id="@+id/method"
+                    style="@style/bottom_buttom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/config_height"
+                    android:background="@drawable/new_task_button_bottom"
+                    android:clickable="true"
+                    android:translationY="-2dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:duplicateParentState="true"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="@dimen/config_padding" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/config_inner_height"
+                            android:gravity="center_vertical"
+                            android:text="@string/syncMethod"
+                            android:textSize="@dimen/general"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/method_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/config_inner_height"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:textColor="@color/config_text"
+                            android:textSize="@dimen/general" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/desc"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <!-- filter -->
+
+                <RelativeLayout
+                    android:id="@+id/filterAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/new_task_button"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:duplicateParentState="true"
+                        android:orientation="vertical"
+                        android:padding="@dimen/config_padding" >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/filter_height" >
+
+                            <TextView
+                                android:id="@+id/filterTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/fileFilter"
+                                android:textSize="@dimen/general"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:id="@+id/filterHelp"
+                                android:layout_width="@dimen/filter_height"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/filterTitle"
+                                android:background="@drawable/help_btn"
+                                android:clickable="true" >
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <com.nachuantech.opensync.view.FlowLayout
+                            android:id="@+id/filtersContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dip"
+                            android:duplicateParentState="true" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/desc"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+
+                <!-- conflict -->
+
+                <RelativeLayout
+                    android:id="@+id/conflictReplacePatternUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/new_task_button"
+                    android:clickable="true" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/new_task_button"
+                        android:duplicateParentState="true"
+                        android:orientation="vertical"
+                        android:padding="@dimen/config_padding" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/filter_height" >
+
+                            <TextView
+                                android:id="@+id/conflictReplacePatternTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:text="@string/conflictReplacePattern"
+                                android:textSize="@dimen/general"
+                                android:textStyle="bold" />
+
+                            <RelativeLayout
+                                android:id="@+id/conflictReplacePatternHelp"
+                                android:layout_width="@dimen/filter_height"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/conflictReplacePatternTitle"
+                                android:background="@drawable/help_btn"
+                                android:clickable="true" >
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/conflictReplacePattern_padding"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/conflictReplacePatternText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dip"
+                                android:textColor="@color/config_text"
+                                android:textSize="@dimen/general" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/desc"
+                        android:duplicateParentState="true"
+                        android:src="@drawable/right_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.nachuantech.opensync.view.SideView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

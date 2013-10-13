@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- location HorizontalScrollView height -->
+    <dimen name="location_height">45dip</dimen>
+
+    <!-- folder listview -->
+    <dimen name="item_height">58dip</dimen>
+    <dimen name="header_height">54dip</dimen>
+    <dimen name="header_text_size">20sp</dimen>
+    <dimen name="file_item_padding">15dip</dimen>
+
+    <!-- title size -->
+    <dimen name="title_size">20sp</dimen>
+
+    <!-- index sync pair item -->
+    <dimen name="item_inner_height">67.5dip</dimen>
+    <dimen name="left_out_width">63dip</dimen>
+    <dimen name="left_finish_square">23dip</dimen>
+    <dimen name="middle_folder_text">18sp</dimen>
+    <dimen name="middle_date_text">15sp</dimen>
+    <dimen name="right_progressbar_outer_square">69.5dip</dimen>
+    <dimen name="progressbar_square">45dip</dimen>
+    <dimen name="left_finish_square_outer">34.5dip</dimen>
+    <dimen name="bottom_progressbar_height">4dip</dimen>
+    <dimen name="empty_text_size">25sp</dimen>
+
+    <!-- location text size -->
+    <dimen name="location_text_size">18sp</dimen>
+
+    <!-- rule view text size -->
+    <dimen name="main">20sp</dimen>
+    <dimen name="general">18sp</dimen>
+
+    <!-- sync task fragment -->
+    <dimen name="image_left">50dip</dimen>
+    <dimen name="image_right">70dip</dimen>
+    <dimen name="sync_task_height">100dip</dimen>
+    <dimen name="sync_task_margin">25dip</dimen>
+
+    <!-- new account header -->
+    <dimen name="image_padding">5dip</dimen>
+    <dimen name="layout_padding">15dip</dimen>
+
+    <!-- sync rule view -->
+    <dimen name="layout_margin">25dip</dimen>
+    <dimen name="config_height">100dip</dimen>
+    <dimen name="config_padding">20dip</dimen>
+    <dimen name="config_inner_height">30dip</dimen>
+    <dimen name="filter_height">60dip</dimen>
+    <dimen name="conflictReplacePattern_padding">15dip</dimen>
+
+    <!-- dialog_edittext -->
+    <dimen name="edittext_padding_top">20dip</dimen>
+
+    <!-- account -->
+    <dimen name="paddingTopBottom">28dip</dimen>
+    <dimen name="detailPadding">18dip</dimen>
+    <dimen name="textsizeMedium">25sp</dimen>
+    <dimen name="textsizeSmall">23sp</dimen>
+
+</resources>

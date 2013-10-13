@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="urlInvite">http://play.google.com/store/apps/details?id=com.nachuantech.opensync</string>
+    <string name="urlSelf">market://details?id=com.nachuantech.opensync</string>
+    <string name="urlUpgrade"></string>
+    <string name="urlFree">market://details?id=com.nachuantech.opensync</string>
+</resources>

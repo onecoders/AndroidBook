@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- location HorizontalScrollView height -->
+    <dimen name="location_height">33dip</dimen>
+
+    <!-- folder listview -->
+    <dimen name="item_height">50dip</dimen>
+    <dimen name="header_height">46dip</dimen>
+    <dimen name="header_text_size">18sp</dimen>
+    <dimen name="file_item_padding">10dip</dimen>
+
+    <!-- title size -->
+    <dimen name="title_size">18sp</dimen>
+
+    <!-- index sync pair item -->
+    <dimen name="item_inner_height">62.5dip</dimen>
+    <dimen name="left_out_width">58dip</dimen>
+    <dimen name="left_finish_square">18dip</dimen>
+    <dimen name="middle_folder_text">13sp</dimen>
+    <dimen name="middle_date_text">10sp</dimen>
+    <dimen name="right_progressbar_outer_square">66.5dip</dimen>
+    <dimen name="progressbar_square">40dip</dimen>
+    <dimen name="left_finish_square_outer">27dip</dimen>
+    <dimen name="bottom_progressbar_height">3dip</dimen>
+    <dimen name="empty_text_size">18sp</dimen>
+
+    <!-- location text size -->
+    <dimen name="location_text_size">15sp</dimen>
+
+    <!-- rule view text size -->
+    <dimen name="main">17sp</dimen>
+    <dimen name="general">15sp</dimen>
+
+    <!-- sync task fragment -->
+    <dimen name="image_left">30dip</dimen>
+    <dimen name="image_right">50dip</dimen>
+    <dimen name="sync_task_height">70dip</dimen>
+    <dimen name="sync_task_margin">15dip</dimen>
+
+    <!-- new account header -->
+    <dimen name="image_padding">15dip</dimen>
+    <dimen name="layout_padding">5dip</dimen>
+
+    <!-- sync rule view -->
+    <dimen name="layout_margin">15dip</dimen>
+    <dimen name="config_height">70dip</dimen>
+    <dimen name="config_padding">10dip</dimen>
+    <dimen name="config_inner_height">25dip</dimen>
+    <dimen name="filter_height">40dip</dimen>
+    <dimen name="conflictReplacePattern_padding">8dip</dimen>
+
+    <!-- dialog_edittext -->
+    <dimen name="edittext_padding_top">10dip</dimen>
+
+    <!-- multiwindow -->
+    <dimen name="app_defaultsize_w">632.0dip</dimen>
+    <dimen name="app_defaultsize_h">598.0dip</dimen>
+    <dimen name="app_minimumsize_w">632.0dip</dimen>
+    <dimen name="app_minimumsize_h">598.0dip</dimen>
+
+    <!-- account -->
+    <dimen name="paddingTopBottom">15dip</dimen>
+    <dimen name="detailPadding">5dip</dimen>
+    <dimen name="textsizeMedium">18sp</dimen>
+    <dimen name="textsizeSmall">15sp</dimen>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:drawableLeft="@drawable/arrow"
+    android:drawablePadding="5dip"
+    android:gravity="center"
+    android:paddingLeft="2dip"
+    android:shadowColor="#ffffff"
+    android:shadowDx="1"
+    android:shadowDy="1"
+    android:shadowRadius="2"
+    android:singleLine="true"
+    android:textSize="@dimen/location_text_size"
+    android:textStyle="bold" />

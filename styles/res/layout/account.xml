@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_repeat" >
+
+    <com.nachuantech.opensync.view.SideView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ScrollView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical"
+            android:padding="@dimen/edgePadding" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/paddingTopBottom"
+                android:paddingTop="@dimen/paddingTopBottom" >
+
+                <TextView
+                    android:id="@+id/editionInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usingFree"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/textsizeMedium" />
+
+                <TextView
+                    android:id="@+id/expireInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/detailPadding"
+                    android:text="@string/expireInNDays"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/textsizeSmall" />
+
+                <TextView
+                    android:id="@+id/viewMySubscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/detailPadding"
+                    android:text="@string/detail"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/abs__holo_blue_light"
+                    android:textSize="@dimen/textsizeSmall" />
+
+                <TextView
+                    android:id="@+id/viewDetailNonLicensedPro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/detailPadding"
+                    android:text="@string/detail"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/abs__holo_blue_light"
+                    android:textSize="@dimen/textsizeSmall" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#575757" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|top"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/paddingTopBottom"
+                android:paddingTop="@dimen/paddingTopBottom" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/paddingTopBottom"
+                    android:text="@string/titleBenefitsOfPro"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="@dimen/textsizeMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/summaryBenefitsOfPro"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/textsizeSmall" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#575757" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="0.93"
+                android:gravity="center_horizontal|top"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/paddingTopBottom"
+                android:paddingTop="@dimen/paddingTopBottom" >
+
+                <TextView
+                    android:id="@+id/subscribe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/paddingTopBottom"
+                    android:paddingTop="@dimen/paddingTopBottom"
+                    android:text="@string/subscribe"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/abs__holo_blue_light"
+                    android:textSize="@dimen/textsizeSmall" />
+
+                <TextView
+                    android:id="@+id/permanentBuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/paddingTopBottom"
+                    android:paddingTop="@dimen/paddingTopBottom"
+                    android:text="@string/permanentBuy"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/abs__holo_blue_light"
+                    android:textSize="@dimen/textsizeSmall" />
+
+                <TextView
+                    android:id="@+id/invite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/paddingTopBottom"
+                    android:paddingTop="@dimen/paddingTopBottom"
+                    android:text="@string/inviteFriends"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/abs__holo_blue_light"
+                    android:textSize="@dimen/textsizeSmall" />
+
+                <TextView
+                    android:id="@+id/inputInvitationCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/paddingTopBottom"
+                    android:paddingTop="@dimen/paddingTopBottom"
+                    android:text="@string/inputInvitationCode"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/abs__holo_blue_light"
+                    android:textSize="@dimen/textsizeSmall" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.nachuantech.opensync.view.SideView
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>

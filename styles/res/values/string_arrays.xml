@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="connection">
+        <item>WiFi only</item>
+        <item>Both WiFi and Mobile</item>
+    </string-array>
+    <string-array name="interval">
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>4 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>24 hours</item>
+    </string-array>
+    <string-array name="method">
+        <item>Two Way</item>
+        <item>Upload only</item>
+        <item>Download only</item>
+        <item>Upload then delete local</item>
+        <item>Download then delete remote</item>
+        <item>Upload Mirror</item>
+        <item>Download Mirror</item>
+    </string-array>
+</resources>

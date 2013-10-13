@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:actionLayout="@layout/action_divider"
+        android:showAsAction="always"
+        android:title="@string/action_divider"/>
+    <item
+        android:id="@+id/finish"
+        android:showAsAction="always"
+        android:title="@string/finish"/>
+
+</menu>
