@@ -6,5 +6,6 @@
     <string name="title">Title</string>
     <string name="content">Content</string>
     <string name="insert">Insert</string>
+    <string name="ioSaving">To IO Saving</string>
 
 </resources>

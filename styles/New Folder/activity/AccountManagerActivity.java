@@ -1,4 +1,4 @@
-package com.nachuantech.opensync.activity;
+package com.activity;
 
 import java.util.List;
 

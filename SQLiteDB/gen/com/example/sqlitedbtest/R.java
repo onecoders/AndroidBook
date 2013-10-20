@@ -29,6 +29,7 @@ public final class R {
         public static final int insert=0x7f080002;
         public static final int show=0x7f080003;
         public static final int title=0x7f080000;
+        public static final int toIOSaving=0x7f080005;
     }
     public static final class layout {
         public static final int line=0x7f030000;
@@ -42,6 +43,7 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int content=0x7f050003;
         public static final int insert=0x7f050004;
+        public static final int ioSaving=0x7f050005;
         public static final int title=0x7f050002;
     }
     public static final class style {
